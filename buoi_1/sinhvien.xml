@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lop>
+    <sinhvien>
+        <id>KTPM2211027</id>
+        <name>Nguyễn Phát Tài</name>
+        <subjects>
+            <subject>
+                <subject_name>Toán cao cấp</subject_name>
+                <score>8.5</score>
+            </subject>
+            <subject>
+                <subject_name>Lập trình C</subject_name>
+                <score>9.0</score>
+            </subject>
+        </subjects>
+    </sinhvien>
+
+    <sinhvien>
+        <id>KTPM2211063</id>
+        <name>Lâm Dương Quốc</name>
+        <subjects>
+            <subject>
+                <subject_name>Cơ sở dữ liệu</subject_name>
+                <score>7.5</score>
+            </subject>
+            <subject>
+                <subject_name>Hệ điều hành</subject_name>
+                <score>8.0</score>
+            </subject>
+        </subjects>
+    </sinhvien>
+
+    <sinhvien>
+        <id>KTPM2211075</id>
+        <name>Phạm Thảo Nguyên</name>
+        <subjects>
+            <subject>
+                <subject_name>Mạng máy tính</subject_name>
+                <score>8.8</score>
+            </subject>
+            <subject>
+                <subject_name>Trí tuệ nhân tạo</subject_name>
+                <score>9.2</score>
+            </subject>
+        </subjects>
+    </sinhvien>
+</lop>
