@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE thuvien [
+    <!ELEMENT thuvien (sach+)>
+    <!ELEMENT sach (title, author, year, genre)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ELEMENT genre (#PCDATA)>
+]>
 <thuvien>
     <sach>
         <title>Đắc Nhân Tâm</title>
@@ -16,7 +24,7 @@
 
     <sach>
         <title>Nhà Giả Kim</title>
-        <author> Paulo Coelho</author>
+        <author>Paulo Coelho</author>
         <year>1988</year>
         <genre>Tiểu thuyết</genre>
     </sach>

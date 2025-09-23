@@ -1,28 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hospital [
+  <!ELEMENT hospital (app:appointment+)>
+  <!ATTLIST hospital
+    xmlns CDATA #IMPLIED
+    xmlns:pat CDATA #IMPLIED
+    xmlns:doc CDATA #IMPLIED
+    xmlns:app CDATA #IMPLIED
+  >
+
+  <!ELEMENT app:appointment (pat:patient, doc:doctor)>
+  <!ATTLIST app:appointment
+    id ID #REQUIRED
+    date CDATA #REQUIRED
+    status CDATA #REQUIRED
+  >
+
+  <!ELEMENT pat:patient (pat:name, pat:dob)>
+  <!ATTLIST pat:patient
+    id ID #REQUIRED
+  >
+  <!ELEMENT pat:name (#PCDATA)>
+  <!ELEMENT pat:dob (#PCDATA)>
+
+  <!ELEMENT doc:doctor (doc:name, doc:specialty)>
+  <!ATTLIST doc:doctor
+    id ID #REQUIRED
+  >
+  <!ELEMENT doc:name (#PCDATA)>
+  <!ELEMENT doc:specialty (#PCDATA)>
+]>
 <hospital xmlns="http://example.com/hospital"
           xmlns:pat="http://example.com/patient"
           xmlns:doc="http://example.com/doctor"
           xmlns:app="http://example.com/appointment">
-    <!-- Lịch hẹn 1 -->
+
+    <!-- Cuộc hẹn thứ nhất -->
     <app:appointment id="A001" date="2025-03-05" status="Đã khám">
         <pat:patient id="P001">
-            <pat:name>Nguyễn Văn Bình An</pat:name>
+            <pat:name>Nguyễn Văn A</pat:name>
             <pat:dob>1990-07-15</pat:dob>
         </pat:patient>
         <doc:doctor id="D001">
-            <doc:name>Trần Thị Hương</doc:name>
+            <doc:name>Trần Thị B</doc:name>
             <doc:specialty>Nội khoa</doc:specialty>
         </doc:doctor>
     </app:appointment>
-    <!-- Lịch hẹn 2 -->
-    <app:appointment id="A002" date="2025-03-10" status="Chưa khám">
+    
+    <!-- Cuộc hẹn thứ hai -->
+    <app:appointment id="A002" date="2025-03-06" status="Chưa khám">
         <pat:patient id="P002">
-            <pat:name>Lê Văn Bình</pat:name>
-            <pat:dob>1985-11-22</pat:dob>
+            <pat:name>Lê Thị C</pat:name>
+            <pat:dob>1985-11-20</pat:dob>
         </pat:patient>
         <doc:doctor id="D002">
-            <doc:name>Phạm Thị Bích Thư</doc:name>
-            <doc:specialty>Ngoại khoa</doc:specialty>
+            <doc:name>Phạm Văn D</doc:name>
+            <doc:specialty>Da liễu</doc:specialty>
         </doc:doctor>
     </app:appointment>
 

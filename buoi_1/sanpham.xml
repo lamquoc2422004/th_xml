@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cua_hang [
+    <!ELEMENT cua_hang (sanpham+)>
+    <!ELEMENT sanpham EMPTY>
+    <!ATTLIST sanpham
+        id ID #REQUIRED
+        category CDATA #REQUIRED
+        price CDATA #REQUIRED
+        currency CDATA #REQUIRED
+        name CDATA #REQUIRED
+    >
+]>
 <cua_hang>
     <sanpham 
         id="SP001" 
