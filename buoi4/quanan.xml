@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QUANAN>
+    <BAN>
+        <MABAN>B001</MABAN>
+        <TENBAN>Ban 1</TENBAN>
+        <SOBAN>4</SOBAN>
+    </BAN>
+    <BAN>
+        <MABAN>B002</MABAN>
+        <TENBAN>Ban 2</TENBAN>
+        <SOBAN>6</SOBAN>
+    </BAN>
+    <MON>
+        <MAMON>M001</MAMON>
+        <TENMON>Com chien</TENMON>
+        <GIA>35000</GIA>
+        <HINHANH>comchien.jpg</HINHANH>
+    </MON>
+    <MON>
+        <MAMON>M002</MAMON>
+        <TENMON>Ca kho to</TENMON>
+        <GIA>50000</GIA>
+        <HINHANH>cakho.jpg</HINHANH>
+    </MON>
+    <MON>
+        <MAMON>M003</MAMON>
+        <TENMON>Canh chua</TENMON>
+        <GIA>45000</GIA>
+        <HINHANH>canhchua.jpg</HINHANH>
+    </MON>
+    <NHANVIEN>
+        <MANV>NV001</MANV>
+        <TENNV>Tran Thi Hoa</TENNV>
+        <SDT>0912345678</SDT>
+        <DIACHI>123 Le Loi, Hue</DIACHI>
+        <GIOITINH>Nu</GIOITINH>
+        <USERNAME>hoatran</USERNAME>
+        <PASSWORD>hoatran2024</PASSWORD>
+    </NHANVIEN>
+    <NHANVIEN>
+        <MANV>NV002</MANV>
+        <TENNV>Nguyen Van B</TENNV>
+        <SDT>0987654321</SDT>
+        <DIACHI>45 Tran Phu, Da Nang</DIACHI>
+        <GIOITINH>Nam</GIOITINH>
+        <USERNAME>nguyenvb</USERNAME>
+        <PASSWORD>nvbpassword</PASSWORD>
+    </NHANVIEN>
+    <HOADON>
+        <SOHD>HD001</SOHD>
+        <NGAYLAP>2025-10-07</NGAYLAP>
+        <TONGTIEN>85000</TONGTIEN>
+        <LAP_HD>NV001</LAP_HD>
+        <THANHTOAN>B001</THANHTOAN>
+    </HOADON>
+    <HOADON>
+        <SOHD>HD002</SOHD>
+        <NGAYLAP>2025-10-07</NGAYLAP>
+        <TONGTIEN>95000</TONGTIEN>
+        <LAP_HD>NV002</LAP_HD>
+        <THANHTOAN>B002</THANHTOAN>
+    </HOADON>
+    <CTHD>
+        <SOHD>HD001</SOHD>
+        <MAMON>M001</MAMON>
+        <SOLUONG>2</SOLUONG>
+    </CTHD>
+    <CTHD>
+        <SOHD>HD001</SOHD>
+        <MAMON>M002</MAMON>
+        <SOLUONG>1</SOLUONG>
+    </CTHD>
+    <CTHD>
+        <SOHD>HD002</SOHD>
+        <MAMON>M003</MAMON>
+        <SOLUONG>3</SOLUONG>
+    </CTHD>
+</QUANAN>

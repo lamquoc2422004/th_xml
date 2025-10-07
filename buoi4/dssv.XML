@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSSV>
+    <KHOA>
+        <MA>K001</MA>
+        <TEN>congnghe</TEN>
+    </KHOA>
+    <KHOA>
+        <MA>K002</MA>
+        <TEN>kinhte</TEN>
+    </KHOA>
+    <LOP>
+        <MA>L001</MA>
+        <TEN>CNPM01</TEN>
+        <QUANLY>K001</QUANLY>
+    </LOP>
+    <LOP>
+        <MA>L002</MA>
+        <TEN>QTKD02</TEN>
+        <QUANLY>K002</QUANLY>
+    </LOP>
+    <SINHVIEN>
+        <MSSV>SV001</MSSV>
+        <HOTEN>Nguyen Van An</HOTEN>
+        <EMAIL>an.nguyen@example.com</EMAIL>
+        <DIACHI>123 Le Loi, Can Tho</DIACHI>
+        <SDT>0912345678</SDT>
+        <THUOC>L001</THUOC>
+    </SINHVIEN>
+    <SINHVIEN>
+        <MSSV>SV002</MSSV>
+        <HOTEN>Tran Thi Nguyen</HOTEN>
+        <EMAIL>tran.b@example.com</EMAIL>
+        <DIACHI>456 Tran Phu</DIACHI>
+        <SDT>0987654321</SDT>
+        <THUOC>L002</THUOC>
+    </SINHVIEN>
+
+</DSSV>
