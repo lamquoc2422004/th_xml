@@ -1,11 +1,9 @@
 from lxml import etree
-
-# Đọc file XML (SV.xml phải nằm cùng thư mục với file này)
 tree = etree.parse("sinhvien.xml")
 
 # Lấy tất cả sinh viên
 students = tree.xpath("//student")
-print("Tổng số sinh viên:", len(students))
+print("Tất cả sinh viên:", len(students))
 
 # Liệt kê tên tất cả sinh viên
 names = tree.xpath("//student/name/text()")

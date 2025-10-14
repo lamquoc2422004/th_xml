@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
 from lxml import etree
 from pathlib import Path
 import sys
-
 # ==== CẤU HÌNH ĐƯỜNG DẪN FILE ====
 xml_path = Path(__file__).resolve().parent / "quanlybanan.xml"
 print(f"Đang tìm file XML ở: {xml_path}")
@@ -65,6 +63,16 @@ queries = {
 
     # 17. Lấy tất cả hóa đơn mà nhân viên nữ lập
     "17. Hóa đơn do nhân viên NỮ lập": "//HOADONS/HOADON[MANV = //NHANVIENS/NHANVIEN[GIOITINH='Nữ']/MANV]/SOHD/text()",
+    
+    # 18. Lấy tất cả nhân viên từng phục vụ bàn số 1
+    "18. Nhân viên từng phục vụ bàn số 1": "//NHANVIENS/NHANVIEN[MANV = //HOADONS/HOADON[SOBAN='1']/MANV]/TENV/text()",
+
+    #19. Lấy tất cả món được gọi nhiều hơn 1 lần trong các hóa đơn
+   "19. Món được gọi nhiều hơn 1 lần": "//MONS/MON[MAMON = //HOADONS/HOADON/CTHD[MAMON = following::CTHD/MAMON]/MAMON]/TENMON/text()",
+
+    #20. Lấy tên bàn + ngày lập hóa đơn tương ứng SOHD='HD02'
+    "20. Tên bàn + ngày lập hóa đơn HD02": "concat(//BANS/BAN[TENBAN = //HOADONS/HOADON[SOHD='HD02']/TENBAN]/TENBAN/text(), ' - ', //HOADONS/HOADON[SOHD='HD02']/NGAYLAP/text())",
+
 }
 # ==== CHẠY TỪNG CÂU VÀ IN KẾT QUẢ ====
 for title, xp in queries.items():
