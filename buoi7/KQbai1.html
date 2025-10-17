@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <title>Kết quả truy vấn sinh viên</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        h2 { color: darkblue; border-bottom: 2px solid #ccc; }
+        table { border-collapse: collapse; width: 70%; margin-bottom: 25px; }
+        th, td { border: 1px solid #999; padding: 6px 10px; text-align: left; }
+        th { background-color: #eee; }
+    </style>
+  </head>
+  <body>
+    <h1>Kết quả truy vấn dữ liệu sinh viên</h1>
+    <h2>1. Danh sách tất cả sinh viên (Mã, Họ tên)</h2>
+    <table>
+      <tr>
+        <th>Mã SV</th>
+        <th>Họ tên</th>
+      </tr>
+      <tr>
+        <td>SV01</td>
+        <td>Nguyễn Thị Thanh Thúy</td>
+      </tr>
+      <tr>
+        <td>SV02</td>
+        <td>Lê Thị Hồng Cầm</td>
+      </tr>
+      <tr>
+        <td>SV03</td>
+        <td>Lê Bảo Long</td>
+      </tr>
+      <tr>
+        <td>SV04</td>
+        <td>Đỗ Lâm Thư</td>
+      </tr>
+      <tr>
+        <td>SV05</td>
+        <td>Trần Bảo Nam Anh</td>
+      </tr>
+      <tr>
+        <td>SV06</td>
+        <td>Lê Cẩm Loan</td>
+      </tr>
+    </table>
+    <h2>2. Danh sách sinh viên (Mã, Tên, Điểm) – sắp xếp giảm dần</h2>
+    <table>
+      <tr>
+        <th>Mã SV</th>
+        <th>Họ tên</th>
+        <th>Điểm</th>
+      </tr>
+      <tr>
+        <td>SV02</td>
+        <td>Lê Thị Hồng Cầm</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>SV04</td>
+        <td>Đỗ Lâm Thư</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>SV03</td>
+        <td>Lê Bảo Long</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>SV05</td>
+        <td>Trần Bảo Nam Anh</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>SV06</td>
+        <td>Lê Cẩm Loan</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>SV01</td>
+        <td>Nguyễn Thị Thanh Thúy</td>
+        <td>6</td>
+      </tr>
+    </table>
+    <h2>3. Danh sách sinh viên sinh theo ngày gần nhau</h2>
+    <table>
+      <tr>
+        <th>STT</th>
+        <th>Họ tên</th>
+        <th>Ngày sinh</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Đỗ Lâm Thư</td>
+        <td>1997-01-10</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Lê Bảo Long</td>
+        <td>1997-11-11</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Trần Bảo Nam Anh</td>
+        <td>1997-12-01</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Nguyễn Thị Thanh Thúy</td>
+        <td>1997-12-20</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Lê Thị Hồng Cầm</td>
+        <td>1998-01-21</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Lê Cẩm Loan</td>
+        <td>1998-11-05</td>
+      </tr>
+    </table>
+    <h2>4. Danh sách các khóa học có sinh viên học </h2>
+    <h3>Toán 101</h3>
+    <table>
+      <tr>
+        <th>Mã SV</th>
+        <th>Họ tên</th>
+      </tr>
+      <tr>
+        <td>SV01</td>
+        <td>Nguyễn Thị Thanh Thúy</td>
+      </tr>
+      <tr>
+        <td>SV02</td>
+        <td>Lê Thị Hồng Cầm</td>
+      </tr>
+    </table>
+    <h3>Anh văn 401</h3>
+    <table>
+      <tr>
+        <th>Mã SV</th>
+        <th>Họ tên</th>
+      </tr>
+      <tr>
+        <td>SV03</td>
+        <td>Lê Bảo Long</td>
+      </tr>
+    </table>
+    <h3>Hóa học 201</h3>
+    <table>
+      <tr>
+        <th>Mã SV</th>
+        <th>Họ tên</th>
+      </tr>
+      <tr>
+        <td>SV03</td>
+        <td>Lê Bảo Long</td>
+      </tr>
+      <tr>
+        <td>SV06</td>
+        <td>Lê Cẩm Loan</td>
+      </tr>
+    </table>
+    <h2>5. Danh sách sinh viên đăng ký khóa "Hóa học 201"</h2>
+    <table>
+      <tr>
+        <th>Mã SV</th>
+        <th>Họ tên</th>
+      </tr>
+      <tr>
+        <td>SV03</td>
+        <td>Lê Bảo Long</td>
+      </tr>
+      <tr>
+        <td>SV06</td>
+        <td>Lê Cẩm Loan</td>
+      </tr>
+    </table>
+    <h2>6. Danh sách sinh viên sinh năm 1997</h2>
+    <table>
+      <tr>
+        <th>Mã SV</th>
+        <th>Họ tên</th>
+        <th>Năm sinh</th>
+      </tr>
+      <tr>
+        <td>SV01</td>
+        <td>Nguyễn Thị Thanh Thúy</td>
+        <td>1997</td>
+      </tr>
+      <tr>
+        <td>SV03</td>
+        <td>Lê Bảo Long</td>
+        <td>1997</td>
+      </tr>
+      <tr>
+        <td>SV04</td>
+        <td>Đỗ Lâm Thư</td>
+        <td>1997</td>
+      </tr>
+      <tr>
+        <td>SV05</td>
+        <td>Trần Bảo Nam Anh</td>
+        <td>1997</td>
+      </tr>
+    </table>
+    <h2>7. Danh sách sinh viên họ “Trần”</h2>
+    <table>
+      <tr>
+        <th>Mã SV</th>
+        <th>Họ tên</th>
+      </tr>
+      <tr>
+        <td>SV05</td>
+        <td>Trần Bảo Nam Anh</td>
+      </tr>
+    </table>
+  </body>
+</html>

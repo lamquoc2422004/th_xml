@@ -1,0 +1,256 @@
+<html>
+<head>
+<title>Quản lý Bán Ăn </title>
+<style>
+        body { font-family: Arial; margin: 20px; }
+        h2 { color: #004080; border-bottom: 2px solid #004080; padding-bottom: 5px; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 30px; }
+        th, td { border: 1px solid #999; padding: 8px; text-align: left; }
+        th { background-color: #d9e2f3; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+<h2>1. Danh sách tất cả các bàn</h2>
+<table>
+<tr>
+<th>STT</th>
+<th>Số bàn</th>
+<th>Tên bàn</th>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>Bàn 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+<td>Bàn 2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3</td>
+<td>Bàn 3</td>
+</tr>
+</table>
+<h2>2. Danh sách nhân viên</h2>
+<table>
+<tr>
+<th>STT</th>
+<th>Mã NV</th>
+<th>Tên</th>
+<th>SDT</th>
+<th>Địa chỉ</th>
+<th>Giới tính</th>
+</tr>
+<tr>
+<td>1</td>
+<td>NV01</td>
+<td>Nguyễn Văn An</td>
+<td>0901234567</td>
+<td>Cần Thơ</td>
+<td>Nam</td>
+</tr>
+<tr>
+<td>2</td>
+<td>NV02</td>
+<td>Trần Thị Bình</td>
+<td>0912345678</td>
+<td>Hồ Chí Minh</td>
+<td>Nữ</td>
+</tr>
+<tr>
+<td>3</td>
+<td>NV03</td>
+<td>Lê Hoàng Nam</td>
+<td>0938765432</td>
+<td>Hà Nội</td>
+<td>Nam</td>
+</tr>
+</table>
+<h2>3. Danh sách món ăn</h2>
+<table>
+<tr>
+<th>STT</th>
+<th>Mã món</th>
+<th>Tên món</th>
+<th>Giá</th>
+<th>Hình ảnh</th>
+</tr>
+<tr>
+<td>1</td>
+<td>M01</td>
+<td>Cá Kho Tộ</td>
+<td>50000</td>
+<td>cakho.jpg</td>
+</tr>
+<tr>
+<td>2</td>
+<td>M02</td>
+<td>Canh Chua Cá Lóc</td>
+<td>40000</td>
+<td>canhchua.jpg</td>
+</tr>
+<tr>
+<td>3</td>
+<td>M03</td>
+<td>Gỏi Cuốn</td>
+<td>30000</td>
+<td>goicuon.jpg</td>
+</tr>
+<tr>
+<td>4</td>
+<td>M04</td>
+<td>Bò Lúc Lắc</td>
+<td>80000</td>
+<td>boluclac.jpg</td>
+</tr>
+</table>
+<h2>4. Thông tin nhân viên NV02</h2>
+<table>
+<tr>
+<th>Mã NV</th>
+<th>Tên</th>
+<th>SĐT</th>
+<th>Địa chỉ</th>
+<th>Giới tính</th>
+</tr>
+<tr>
+<td>NV02</td>
+<td>Trần Thị Bình</td>
+<td>0912345678</td>
+<td>Hồ Chí Minh</td>
+<td>Nữ</td>
+</tr>
+</table>
+<h2>5. Danh sách món có giá &gt; 50,000</h2>
+<table>
+<tr>
+<th>Mã món</th>
+<th>Tên món</th>
+<th>Giá</th>
+</tr>
+<tr>
+<td>M04</td>
+<td>Bò Lúc Lắc</td>
+<td>80000</td>
+</tr>
+</table>
+<h2>6. Thông tin hóa đơn HD03</h2>
+<table>
+<tr>
+<th>Tên nhân viên</th>
+<th>Số bàn</th>
+<th>Ngày lập</th>
+<th>Tổng tiền</th>
+</tr>
+<tr>
+<td>Lê Hoàng Nam</td>
+<td>3</td>
+<td>2025-10-03</td>
+<td>160000</td>
+</tr>
+</table>
+<h2>7. Các món trong hóa đơn HD02</h2>
+<table>
+<tr>
+<th>Mã món</th>
+<th>Tên món</th>
+</tr>
+<tr>
+<td>M03</td>
+<td>Gỏi Cuốn</td>
+</tr>
+<tr>
+<td>M02</td>
+<td>Canh Chua Cá Lóc</td>
+</tr>
+</table>
+<h2>8. Nhân viên lập hóa đơn HD02</h2>
+<p><strong>Nhân viên:</strong>Trần Thị Bình</p>
+<h2>9. Tổng số bàn</h2>
+<p>3</p>
+<h2>10. Số hóa đơn lập bởi NV01</h2>
+<p>2</p>
+<h2>11. Danh sách món bán cho bàn số 2</h2>
+<table>
+<tr>
+<th>Mã món</th>
+<th>Tên món</th>
+</tr>
+<tr>
+<td>M03</td>
+<td>Gỏi Cuốn</td>
+</tr>
+<tr>
+<td>M02</td>
+<td>Canh Chua Cá Lóc</td>
+</tr>
+<tr>
+<td>M04</td>
+<td>Bò Lúc Lắc</td>
+</tr>
+<tr>
+<td>M01</td>
+<td>Cá Kho Tộ</td>
+</tr>
+<tr>
+<td>M02</td>
+<td>Canh Chua Cá Lóc</td>
+</tr>
+</table>
+<h2>12. Nhân viên lập hóa đơn cho bàn số 3</h2>
+<ul><li>Lê Hoàng Nam</li></ul>
+<h2>13. Các món được gọi nhiều hơn 1 lần trong các hóa đơn</h2>
+<table>
+<tr>
+<th>Mã món</th>
+<th>Tên món</th>
+</tr>
+<tr>
+<td>M01</td>
+<td>Cá Kho Tộ</td>
+</tr>
+<tr>
+<td>M02</td>
+<td>Canh Chua Cá Lóc</td>
+</tr>
+<tr>
+<td>M04</td>
+<td>Bò Lúc Lắc</td>
+</tr>
+</table>
+<h2>14. Hóa đơn HD04 chi tiết</h2>
+<table>
+<tr>
+<th>Mã món</th>
+<th>Tên món</th>
+<th>Đơn giá</th>
+<th>Số lượng</th>
+<th>Thành tiền</th>
+</tr>
+<tr>
+<td>M04</td>
+<td>Bò Lúc Lắc</td>
+<td>80000</td>
+<td>2</td>
+<td>160000</td>
+</tr>
+<tr>
+<td>M01</td>
+<td>Cá Kho Tộ</td>
+<td>50000</td>
+<td>1</td>
+<td>50000</td>
+</tr>
+<tr>
+<td>M02</td>
+<td>Canh Chua Cá Lóc</td>
+<td>40000</td>
+<td>4</td>
+<td>160000</td>
+</tr>
+</table>
+</body>
+</html>
